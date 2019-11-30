@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>mainactivity</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content overflow-scroll="true">
+
+
+  <ion-list class="card-background-page">
+    <ion-item *ngFor="let category of categorydataarr"  (click)="onClickMe(category)">
+      <!-- <img class="img-slide" [src]="category.imgurl" onError="this.src='assets/images/arka.jpg';"
+        />
+
+      {{category.name}} -->
+      <ion-card>
+
+        <img [src]="category.imgurl"  onError="this.src='assets/images/arka.jpg';" />
+        <div class="card-title">{{category.name}}</div>
+      </ion-card>
+
+    </ion-item>
+  </ion-list>
+
+  <!-- <img [src]="imageSrc" /> -->
+</ion-content>
