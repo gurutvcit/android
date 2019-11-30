@@ -82,8 +82,6 @@ export class MainactivityPage implements OnInit {
           this.categorydataarr.push(catobj);
         }
       }
-
-
     }.bind(this));
   }
   onClickMe(category: category) {
